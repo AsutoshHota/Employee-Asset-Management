@@ -1,0 +1,7 @@
+<odoo>
+  <menuitem id="menu_employee_asset_root" name="Assets" sequence="10"/>
+  <menuitem id="menu_employee_asset_all" name="All Assets"
+            parent="menu_employee_asset_root" action="action_employee_asset_all"/>
+  <menuitem id="menu_employee_asset_my" name="My Assets"
+            parent="menu_employee_asset_root" action="action_employee_asset_my"/>
+</odoo>

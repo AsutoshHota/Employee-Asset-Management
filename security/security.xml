@@ -1,0 +1,13 @@
+<odoo>
+  <record id="group_employee_asset_hr" model="res.groups">
+    <field name="name">HR Asset Manager</field>
+    <field name="category_id" ref="base.module_category_human_resources"/>
+  </record>
+
+  <record id="employee_asset_rule_employee" model="ir.rule">
+    <field name="name">Employee: See Own Assets</field>
+    <field name="model_id" ref="model_employee_asset"/>
+    <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+    <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+  </record>
+</odoo>

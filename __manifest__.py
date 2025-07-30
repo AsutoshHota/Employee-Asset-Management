@@ -1,9 +1,9 @@
 {
     'name': 'Employee Asset Management',
-    'version': '1.0',
+    'version': '16.0.1.0.0',  
     'category': 'Human Resources',
     'summary': 'Assign, Track, and Reclaim Assets for Employees',
-    'author': 'Odoo',
+    'author': 'Odoo', 
     'depends': ['hr'],
     'data': [
         'security/security.xml',
@@ -13,4 +13,5 @@
     ],
     'installable': True,
     'application': True,
+    'license': 'LGPL-3', 
 }
